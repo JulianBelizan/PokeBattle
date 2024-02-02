@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Pokémon Battle</title>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1>Pokémon Battle</h1>
+        </header>
+        <div class="navbar">
+            <button id="show-login">Ingresar</button>
+            <div class="popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                    <h2>Iniciar Sesion</h2>
+                    <div class="form-element">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" placeholder="Enter Username" />
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" placeholder="Enter Password" />
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="" id="remember-me">
+                        <label for="remember-me">Recordarme</label>
+                    </div>
+                    <div class="form-element">
+                        <button>Ingresar</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </div>
+            <button>Registrar</button>
+        </div>
+    </div>
+    <main>
+        <section class="pokemon-selection">
+            <!-- <h2>Selecciona tu Pokémon:</h2> -->
+            <!-- Agrega este select debajo de "Selecciona tu Pokémon" -->
+            <!-- <select id="pokemon-list">
+                <option value="">Elige un Pokémon</option>
+            </select> -->
+            <h2>Selecciona tu Pokémon Aleatorio:</h2>
+            <div class="pokemon-images" id="pokemon-images">
+                <!-- Aquí se mostrarán las imágenes de los Pokémon -->
+            </div>
+            <button id="start-battle">Iniciar Batalla</button>
+        </section>
+        <section class="battle-results">
+            <!-- Aquí se mostrarán los resultados de la batalla -->
+        </section>
+        <section class="pokemon-info">
+            <!-- Aquí se mostrará la información del Pokémon seleccionado -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
